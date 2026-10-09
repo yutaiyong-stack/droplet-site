@@ -1,0 +1,60 @@
+/* 半点科技实验站样式表 */
+/* 配色思路：水行业的深蓝 + 青绿 */
+
+/* 全局基础：去掉浏览器默认边距，统一字体和行距 */
+body {
+    margin: 0;
+    font-family: "PingFang SC", "Microsoft YaHei", sans-serif;
+    color: #333;
+    line-height: 1.7;
+}
+
+/* 导航栏：深蓝底，白色文字 */
+nav {
+    background: #0a4d68;
+    padding: 14px 24px;
+}
+nav strong {
+    color: #fff;
+    font-size: 18px;
+    margin-right: 24px;
+}
+nav a {
+    color: #cfe8f5;
+    text-decoration: none;   /* 去掉链接下划线 */
+    margin-right: 16px;
+}
+nav a:hover {                 /* 鼠标悬停时的效果 */
+    color: #fff;
+}
+
+/* 首屏横幅：青绿底，居中大字 */
+header {
+    background: #088395;
+    color: #fff;
+    text-align: center;
+    padding: 80px 24px;
+}
+header h1 { margin: 0 0 12px; font-size: 36px; }
+header p  { margin: 0; opacity: 0.9; }
+
+/* 内容区块：限制最大宽度并居中，读起来不累 */
+section {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 48px 24px;
+}
+section h2 {
+    color: #0a4d68;
+    border-left: 4px solid #088395;   /* 标题左边的小竖条 */
+    padding-left: 10px;
+}
+
+/* 页脚：深色底 */
+footer {
+    background: #222;
+    color: #ccc;
+    text-align: center;
+    padding: 32px 24px;
+}
+footer h2 { color: #fff; }
