@@ -1,0 +1,48 @@
+#!/bin/bash
+# v2：下载43张详情页主图
+mkdir -p img
+ok=0; fail=0
+curl -sS --fail --max-time 30 -o "img/main-product-item-2.png" "https://cmsimg01.71360.com/data/20190602/11u1169/public/2019060221072074978.png" && ok=$((ok+1)) || { echo "下载失败: product-item-2.html"; fail=$((fail+1)); }
+curl -sS --fail --max-time 30 -o "img/main-product-item-3.png" "https://cmsimg01.71360.com/data/20190602/11u1169/public/2019060221072057112.png" && ok=$((ok+1)) || { echo "下载失败: product-item-3.html"; fail=$((fail+1)); }
+curl -sS --fail --max-time 30 -o "img/main-product-item-4.png" "https://cmsimg01.71360.com/data/20190602/11u1169/public/2019060221072064248.png" && ok=$((ok+1)) || { echo "下载失败: product-item-4.html"; fail=$((fail+1)); }
+curl -sS --fail --max-time 30 -o "img/main-product-item-5.png" "https://cmsimg01.71360.com/data/20190602/11u1169/public/2019060221072019259.png" && ok=$((ok+1)) || { echo "下载失败: product-item-5.html"; fail=$((fail+1)); }
+curl -sS --fail --max-time 30 -o "img/main-product-item-6.png" "https://cmsimg01.71360.com/data/20190602/11u1169/public/2019060221072073507.png" && ok=$((ok+1)) || { echo "下载失败: product-item-6.html"; fail=$((fail+1)); }
+curl -sS --fail --max-time 30 -o "img/main-product-item-7.png" "https://cmsimg01.71360.com/data/20190602/11u1169/public/2019060221074518283.png" && ok=$((ok+1)) || { echo "下载失败: product-item-7.html"; fail=$((fail+1)); }
+curl -sS --fail --max-time 30 -o "img/main-product-item-8.png" "https://cmsimg01.71360.com/data/20190602/11u1169/public/2019060221072096106.png" && ok=$((ok+1)) || { echo "下载失败: product-item-8.html"; fail=$((fail+1)); }
+curl -sS --fail --max-time 30 -o "img/main-product-item-9.png" "https://cmsimg01.71360.com/data/20190602/11u1169/public/2019060221074560936.png" && ok=$((ok+1)) || { echo "下载失败: product-item-9.html"; fail=$((fail+1)); }
+curl -sS --fail --max-time 30 -o "img/main-product-item-10.png" "https://cmsimg01.71360.com/data/20190602/11u1169/public/2019060221072086119.png" && ok=$((ok+1)) || { echo "下载失败: product-item-10.html"; fail=$((fail+1)); }
+curl -sS --fail --max-time 30 -o "img/main-product-item-11.png" "https://cmsimg01.71360.com/data/20190602/11u1169/public/2019060221074573299.png" && ok=$((ok+1)) || { echo "下载失败: product-item-11.html"; fail=$((fail+1)); }
+curl -sS --fail --max-time 30 -o "img/main-case-item-12.png" "https://cmsimg01.71360.com/data/11u1169/public/201903/20190323/2019032322114478986.png" && ok=$((ok+1)) || { echo "下载失败: case-item-12.html"; fail=$((fail+1)); }
+curl -sS --fail --max-time 30 -o "img/main-product-item-12.png" "https://cmsimg01.71360.com/data/20190602/11u1169/public/2019060221074595588.png" && ok=$((ok+1)) || { echo "下载失败: product-item-12.html"; fail=$((fail+1)); }
+curl -sS --fail --max-time 30 -o "img/main-case-item-13.png" "https://cmsimg01.71360.com/data/11u1169/public/201903/20190322/2019032212552153114.png" && ok=$((ok+1)) || { echo "下载失败: case-item-13.html"; fail=$((fail+1)); }
+curl -sS --fail --max-time 30 -o "img/main-product-item-13.png" "https://cmsimg01.71360.com/data/20191024/11u1169/public/2019102412112918267.png" && ok=$((ok+1)) || { echo "下载失败: product-item-13.html"; fail=$((fail+1)); }
+curl -sS --fail --max-time 30 -o "img/main-case-item-14.jpg" "https://cmsimg01.71360.com/data/11u1169/public/201904/20190401/2019040109475681132.jpg" && ok=$((ok+1)) || { echo "下载失败: case-item-14.html"; fail=$((fail+1)); }
+curl -sS --fail --max-time 30 -o "img/main-product-item-14.png" "https://img03.71360.com/w3/k4gv5/20240724/d8b169e2ad97ab63cb3ced63026bf2eb.png" && ok=$((ok+1)) || { echo "下载失败: product-item-14.html"; fail=$((fail+1)); }
+curl -sS --fail --max-time 30 -o "img/main-case-item-15.png" "https://cmsimg01.71360.com/data/11u1169/public/201903/20190322/2019032212152319602.png" && ok=$((ok+1)) || { echo "下载失败: case-item-15.html"; fail=$((fail+1)); }
+curl -sS --fail --max-time 30 -o "img/main-product-item-15.png" "https://img03.71360.com/w3/k4gv5/20240724/adc57e8570662c42456727f2feeacf4d.png" && ok=$((ok+1)) || { echo "下载失败: product-item-15.html"; fail=$((fail+1)); }
+curl -sS --fail --max-time 30 -o "img/main-article-item-16.png" "https://cmsimg01.71360.com/data/11u1169/public/201903/20190319/2019031910572397786.png" && ok=$((ok+1)) || { echo "下载失败: article-item-16.html"; fail=$((fail+1)); }
+curl -sS --fail --max-time 30 -o "img/main-article-item-17.png" "https://cmsimg01.71360.com/data/11u1169/public/201903/20190319/2019031910572397786.png" && ok=$((ok+1)) || { echo "下载失败: article-item-17.html"; fail=$((fail+1)); }
+curl -sS --fail --max-time 30 -o "img/main-article-item-18.png" "https://cmsimg01.71360.com/data/11u1169/public/201903/20190319/2019031910572397786.png" && ok=$((ok+1)) || { echo "下载失败: article-item-18.html"; fail=$((fail+1)); }
+curl -sS --fail --max-time 30 -o "img/main-case-item-21.jpg" "https://cmsimg01.71360.com/data/11u1169/public/201903/20190331/2019033120321918781.jpg" && ok=$((ok+1)) || { echo "下载失败: case-item-21.html"; fail=$((fail+1)); }
+curl -sS --fail --max-time 30 -o "img/main-article-item-22.png" "https://cmsimg01.71360.com/data/11u1169/public/201903/20190319/2019031910572397786.png" && ok=$((ok+1)) || { echo "下载失败: article-item-22.html"; fail=$((fail+1)); }
+curl -sS --fail --max-time 30 -o "img/main-case-item-23.jpg" "https://cmsimg01.71360.com/data/20190619/11u1169/public/2019061913295163590.jpg" && ok=$((ok+1)) || { echo "下载失败: case-item-23.html"; fail=$((fail+1)); }
+curl -sS --fail --max-time 30 -o "img/main-case-item-24.jpg" "https://cmsimg01.71360.com/data/20190911/11u1169/public/2019091109183472980.jpg" && ok=$((ok+1)) || { echo "下载失败: case-item-24.html"; fail=$((fail+1)); }
+curl -sS --fail --max-time 30 -o "img/main-case-item-25.gif" "https://cmsimg01.71360.com/data/20190924/11u1169/public/2019092409511015146.gif" && ok=$((ok+1)) || { echo "下载失败: case-item-25.html"; fail=$((fail+1)); }
+curl -sS --fail --max-time 30 -o "img/main-article-item-26.png" "https://cmsimg01.71360.com/data/11u1169/public/201903/20190319/2019031910572397786.png" && ok=$((ok+1)) || { echo "下载失败: article-item-26.html"; fail=$((fail+1)); }
+curl -sS --fail --max-time 30 -o "img/main-article-item-27.png" "https://cmsimg01.71360.com/data/11u1169/public/201903/20190319/2019031910572397786.png" && ok=$((ok+1)) || { echo "下载失败: article-item-27.html"; fail=$((fail+1)); }
+curl -sS --fail --max-time 30 -o "img/main-case-item-29.jpg" "https://cmsimg01.71360.com/data/11u1169/public/201904/20190401/2019040109475681132.jpg" && ok=$((ok+1)) || { echo "下载失败: case-item-29.html"; fail=$((fail+1)); }
+curl -sS --fail --max-time 30 -o "img/main-article-item-30.png" "https://cmsimg01.71360.com/data/11u1169/public/201903/20190319/2019031910572397786.png" && ok=$((ok+1)) || { echo "下载失败: article-item-30.html"; fail=$((fail+1)); }
+curl -sS --fail --max-time 30 -o "img/main-article-item-31.png" "https://cmsimg01.71360.com/data/11u1169/public/201903/20190319/2019031910572397786.png" && ok=$((ok+1)) || { echo "下载失败: article-item-31.html"; fail=$((fail+1)); }
+curl -sS --fail --max-time 30 -o "img/main-article-item-32.png" "https://cmsimg01.71360.com/data/11u1169/public/201903/20190319/2019031910572397786.png" && ok=$((ok+1)) || { echo "下载失败: article-item-32.html"; fail=$((fail+1)); }
+curl -sS --fail --max-time 30 -o "img/main-case-item-35.png" "https://img03.71360.com/file/read/www/M00/41/1A/wKj0iWDIQwCADwHPAAxyVneVhkY146.png" && ok=$((ok+1)) || { echo "下载失败: case-item-35.html"; fail=$((fail+1)); }
+curl -sS --fail --max-time 30 -o "img/main-case-item-41.jpg" "https://img03.71360.com/file/read/www/M00/13/05/wKj0iWHefPKASN1sAAGPSRijUTc031.jpg" && ok=$((ok+1)) || { echo "下载失败: case-item-41.html"; fail=$((fail+1)); }
+curl -sS --fail --max-time 30 -o "img/main-article-item-42.png" "https://cmsimg01.71360.com/data/11u1169/public/201903/20190319/2019031910572397786.png" && ok=$((ok+1)) || { echo "下载失败: article-item-42.html"; fail=$((fail+1)); }
+curl -sS --fail --max-time 30 -o "img/main-article-item-43.png" "https://cmsimg01.71360.com/data/11u1169/public/201903/20190319/2019031910572397786.png" && ok=$((ok+1)) || { echo "下载失败: article-item-43.html"; fail=$((fail+1)); }
+curl -sS --fail --max-time 30 -o "img/main-case-item-45.png" "https://img03.71360.com/file/read/www/M00/63/A1/wKj0iWIq4eyAS6J_AAFAfFL5GMw136.png" && ok=$((ok+1)) || { echo "下载失败: case-item-45.html"; fail=$((fail+1)); }
+curl -sS --fail --max-time 30 -o "img/main-article-item-46.png" "https://cmsimg01.71360.com/data/11u1169/public/201903/20190319/2019031910572397786.png" && ok=$((ok+1)) || { echo "下载失败: article-item-46.html"; fail=$((fail+1)); }
+curl -sS --fail --max-time 30 -o "img/main-case-item-47.png" "https://img03.71360.com/file/read/www/M00/0E/6A/wKj0iWK-0PSAfG29AAGDRwS7Smg725.png" && ok=$((ok+1)) || { echo "下载失败: case-item-47.html"; fail=$((fail+1)); }
+curl -sS --fail --max-time 30 -o "img/main-case-item-48.png" "https://img03.71360.com/file/read/www2/M00/0D/2E/rBBjB2PGTZqAQS3wAAIU4HcDmbk649.png" && ok=$((ok+1)) || { echo "下载失败: case-item-48.html"; fail=$((fail+1)); }
+curl -sS --fail --max-time 30 -o "img/main-article-item-49.png" "https://cmsimg01.71360.com/data/11u1169/public/201903/20190319/2019031910572397786.png" && ok=$((ok+1)) || { echo "下载失败: article-item-49.html"; fail=$((fail+1)); }
+curl -sS --fail --max-time 30 -o "img/main-article-item-50.png" "https://cmsimg01.71360.com/data/11u1169/public/201903/20190319/2019031910572397786.png" && ok=$((ok+1)) || { echo "下载失败: article-item-50.html"; fail=$((fail+1)); }
+curl -sS --fail --max-time 30 -o "img/main-article-item-51.png" "https://cmsimg01.71360.com/data/11u1169/public/201903/20190319/2019031910572397786.png" && ok=$((ok+1)) || { echo "下载失败: article-item-51.html"; fail=$((fail+1)); }
+echo "完成：成功 $ok 张，失败 $fail 张"

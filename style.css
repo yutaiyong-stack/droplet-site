@@ -62,3 +62,6 @@ main.detail h1 { color:#0a4d68; font-size:26px; border-bottom:2px solid #e2eef3;
     .aboutwrap { flex-direction:column; }
     .aboutwrap img { width:100%; }
 }
+
+/* 详情页主图 */
+img.mainimg { display:block; max-width:420px; width:100%; margin:16px auto; border-radius:8px; box-shadow:0 2px 10px rgba(10,77,104,.12); }
