@@ -1,60 +1,64 @@
-/* 半点科技实验站样式表 */
-/* 配色思路：水行业的深蓝 + 青绿 */
+/* 半点科技官网样式 - 水行业深蓝青绿配色 */
+* { box-sizing: border-box; }
+body { margin: 0; font-family: "PingFang SC","Microsoft YaHei",sans-serif; color:#333; line-height:1.7; }
+img { max-width:100%; }
 
-/* 全局基础：去掉浏览器默认边距，统一字体和行距 */
-body {
-    margin: 0;
-    font-family: "PingFang SC", "Microsoft YaHei", sans-serif;
-    color: #333;
-    line-height: 1.7;
-}
+nav { background:#0a4d68; padding:14px 24px; position:sticky; top:0; z-index:10; }
+nav strong { color:#fff; font-size:18px; margin-right:24px; }
+nav a { color:#cfe8f5; text-decoration:none; margin-right:16px; font-size:15px; }
+nav a:hover { color:#fff; }
 
-/* 导航栏：深蓝底，白色文字 */
-nav {
-    background: #0a4d68;
-    padding: 14px 24px;
-}
-nav strong {
-    color: #fff;
-    font-size: 18px;
-    margin-right: 24px;
-}
-nav a {
-    color: #cfe8f5;
-    text-decoration: none;   /* 去掉链接下划线 */
-    margin-right: 16px;
-}
-nav a:hover {                 /* 鼠标悬停时的效果 */
-    color: #fff;
-}
+header { background:linear-gradient(135deg,#0a4d68,#088395); color:#fff; text-align:center; padding:90px 24px; }
+header h1 { margin:0 0 14px; font-size:38px; }
+header p { margin:0 0 8px; opacity:.92; font-size:18px; }
+header .tel { font-size:22px; font-weight:bold; margin-top:20px; }
+header .tel a { color:#ffd166; text-decoration:none; }
 
-/* 首屏横幅：青绿底，居中大字 */
-header {
-    background: #088395;
-    color: #fff;
-    text-align: center;
-    padding: 80px 24px;
-}
-header h1 { margin: 0 0 12px; font-size: 36px; }
-header p  { margin: 0; opacity: 0.9; }
+.stats { display:flex; justify-content:center; gap:60px; background:#f0f7fa; padding:28px 24px; flex-wrap:wrap; }
+.stats div { text-align:center; }
+.stats strong { display:block; font-size:28px; color:#0a4d68; }
+.stats span { color:#666; font-size:14px; }
 
-/* 内容区块：限制最大宽度并居中，读起来不累 */
-section {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 48px 24px;
-}
-section h2 {
-    color: #0a4d68;
-    border-left: 4px solid #088395;   /* 标题左边的小竖条 */
-    padding-left: 10px;
-}
+section { max-width:1100px; margin:0 auto; padding:56px 24px; }
+section.alt { background:#f7fbfc; max-width:none; }
+section.alt > * { max-width:1100px; margin-left:auto; margin-right:auto; }
+section h2 { color:#0a4d68; border-left:4px solid #088395; padding-left:10px; font-size:28px; }
+section .sub { color:#777; margin-top:-6px; }
 
-/* 页脚：深色底 */
-footer {
-    background: #222;
-    color: #ccc;
-    text-align: center;
-    padding: 32px 24px;
+.grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(230px,1fr)); gap:22px; margin-top:24px; }
+.card { background:#fff; border:1px solid #e2eef3; border-radius:10px; overflow:hidden; transition:box-shadow .2s; }
+.card:hover { box-shadow:0 4px 16px rgba(10,77,104,.12); }
+.card img { width:100%; height:150px; object-fit:cover; }
+.card h3 { margin:12px 14px 6px; font-size:16px; }
+.card h3 a { color:#0a4d68; text-decoration:none; }
+.card p { margin:0 14px 14px; font-size:13px; color:#666; }
+
+.artlist { list-style:none; padding:0; }
+.artlist li { border-bottom:1px dashed #d5e5ec; padding:10px 0; }
+.artlist a { color:#333; text-decoration:none; }
+.artlist a:hover { color:#088395; }
+
+.aboutwrap { display:flex; gap:28px; align-items:flex-start; margin-top:10px; }
+.aboutwrap img { width:320px; border-radius:10px; flex-shrink:0; }
+.aboutwrap p { margin:0; text-align:justify; }
+
+footer { background:#222; color:#ccc; text-align:center; padding:36px 24px; }
+footer h2 { color:#fff; font-size:20px; }
+footer a { color:#ffd166; text-decoration:none; }
+footer .copyright { font-size:13px; color:#888; margin-top:14px; }
+
+/* 详情页 */
+main.detail { max-width:860px; margin:0 auto; padding:40px 24px; }
+main.detail h1 { color:#0a4d68; font-size:26px; border-bottom:2px solid #e2eef3; padding-bottom:12px; }
+.content img { border-radius:8px; margin:10px 0; }
+.content h2,.content h3 { color:#0a4d68; }
+.back a { color:#088395; text-decoration:none; }
+
+@media (max-width:640px) {
+    nav { text-align:center; }
+    nav strong { display:block; margin-bottom:8px; }
+    nav a { margin:0 8px; }
+    header h1 { font-size:28px; }
+    .aboutwrap { flex-direction:column; }
+    .aboutwrap img { width:100%; }
 }
-footer h2 { color: #fff; }
