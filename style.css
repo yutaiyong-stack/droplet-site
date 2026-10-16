@@ -101,3 +101,5 @@ header { padding:0; }
     .hero-text h1 { font-size:24px; }
     .call-float { display:block; }
 }
+
+.aboutwrap.full p { max-width:860px; }
