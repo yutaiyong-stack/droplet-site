@@ -65,3 +65,39 @@ main.detail h1 { color:#0a4d68; font-size:26px; border-bottom:2px solid #e2eef3;
 
 /* 详情页主图 */
 img.mainimg { display:block; max-width:420px; width:100%; margin:16px auto; border-radius:8px; box-shadow:0 2px 10px rgba(10,77,104,.12); }
+
+/* ===== v3：轮播首屏 ===== */
+header { padding:0; }
+.slider { position:relative; height:420px; overflow:hidden; }
+.slide { position:absolute; inset:0; background-size:cover; background-position:center; opacity:0; transition:opacity 1.2s ease; }
+.slide.active { opacity:1; }
+.hero-text { position:absolute; left:0; right:0; bottom:0; padding:40px 24px 30px;
+    background:linear-gradient(transparent, rgba(10,77,104,.85)); color:#fff; text-align:center; }
+.hero-text h1 { margin:0 0 10px; font-size:34px; text-shadow:0 2px 8px rgba(0,0,0,.35); }
+.hero-text p { margin:0 0 6px; opacity:.95; font-size:17px; }
+.hero-text .tel { font-size:21px; font-weight:bold; margin-top:12px; }
+.hero-text .tel a { color:#ffd166; text-decoration:none; }
+.dots { position:absolute; bottom:12px; left:0; right:0; text-align:center; z-index:2; }
+.dots span { display:inline-block; width:10px; height:10px; border-radius:50%; background:rgba(255,255,255,.45); margin:0 5px; cursor:pointer; }
+.dots span.on { background:#ffd166; }
+
+/* ===== v3：联系板块 ===== */
+.contact-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:22px; margin-top:24px; }
+.contact-card { background:#fff; border:1px solid #e2eef3; border-radius:12px; padding:26px 20px; text-align:center; }
+.contact-card .qr { width:170px; height:170px; object-fit:contain; border:1px solid #eee; border-radius:8px; }
+.contact-card .cicon { font-size:40px; line-height:1.4; }
+.contact-card h3 { color:#0a4d68; margin:10px 0 6px; }
+.contact-card p { margin:4px 0; color:#666; font-size:14px; }
+.contact-card a { color:#088395; text-decoration:none; }
+.contact-card a.big { font-size:22px; font-weight:bold; color:#0a4d68; }
+
+/* ===== v3：手机悬浮拨号 ===== */
+.call-float { display:none; position:fixed; right:18px; bottom:18px; width:56px; height:56px; border-radius:50%;
+    background:#e63946; color:#fff; font-size:26px; text-align:center; line-height:56px;
+    box-shadow:0 4px 14px rgba(0,0,0,.3); z-index:99; text-decoration:none; }
+
+@media (max-width:640px) {
+    .slider { height:300px; }
+    .hero-text h1 { font-size:24px; }
+    .call-float { display:block; }
+}
