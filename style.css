@@ -117,3 +117,9 @@ h2.part { border-top:2px solid #e2eef3; padding-top:28px; margin-top:40px; }
 /* 无图文字卡片 */
 .card.noimg { padding-top:20px; }
 .card.noimg h3 { font-size:17px; }
+
+/* 合作客户 logo 墙 */
+.plogo { display:flex; flex-wrap:wrap; justify-content:center; align-items:center; gap:28px; margin-top:24px; }
+.plogo img { height:52px; width:auto; max-width:190px; object-fit:contain; filter:grayscale(1); opacity:.75; transition:all .25s; }
+.plogo img:hover { filter:none; opacity:1; }
+@media (max-width:640px) { .plogo { gap:18px; } .plogo img { height:38px; max-width:140px; } }
