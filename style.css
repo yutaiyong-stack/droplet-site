@@ -125,7 +125,7 @@ h2.part { border-top:2px solid #e2eef3; padding-top:28px; margin-top:40px; }
 @media (max-width:640px) { .plogo { gap:18px; } .plogo img { height:38px; max-width:140px; } }
 
 /* 导航 logo（白底圆角徽章，衬深蓝导航条） */
-nav .logo { height:40px; vertical-align:middle; margin-right:16px; border-radius:4px; }
+nav .logo { height:38px; width:auto; vertical-align:middle; margin-right:14px; }
 
 /* 浮动在线咨询 */
 .chat-btn { position:fixed; right:18px; bottom:18px; width:52px; height:52px; border-radius:50%;
@@ -159,3 +159,11 @@ nav .logo { height:40px; vertical-align:middle; margin-right:16px; border-radius
 .brand-text { color:#fff; font-size:17px; font-weight:bold; letter-spacing:1px; margin-right:18px; white-space:nowrap; }
 nav { background:linear-gradient(90deg,#0575e6 0%,#021b79 100%); }
 @media (max-width:640px){ .brand-text { display:none; } }
+
+/* 底部公司名条 */
+.site-foot { background:#021b79; color:rgba(255,255,255,.85); text-align:center; padding:20px 24px; font-size:14px; }
+.site-foot p { margin:4px 0; }
+.foot-addr { font-size:12px; color:rgba(255,255,255,.6); }
+.foot-icp { font-size:12px; }
+.foot-icp a { color:rgba(255,255,255,.6); text-decoration:none; }
+.foot-icp a:hover { color:#fff; }
