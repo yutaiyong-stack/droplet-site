@@ -108,3 +108,8 @@ header { padding:0; }
 .content table { border-collapse:collapse; margin:14px 0; width:100%; max-width:680px; font-size:15px; }
 .content td, .content th { border:1px solid #c9d8e0; padding:8px 12px; text-align:left; }
 .content h2, .content h3 { font-size:20px; color:#0a4d68; margin:26px 0 10px; }
+
+/* 案例/产品页：简介引导段 */
+.lead { background:#f0f7fa; border-left:4px solid #088395; padding:14px 18px; border-radius:0 8px 8px 0; color:#33505e; margin:14px 0 20px; }
+/* 第二部分分隔标题 */
+h2.part { border-top:2px solid #e2eef3; padding-top:28px; margin-top:40px; }
