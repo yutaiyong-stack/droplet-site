@@ -167,3 +167,9 @@ nav { background:linear-gradient(90deg,#0575e6 0%,#021b79 100%); }
 .foot-icp { font-size:12px; }
 .foot-icp a { color:rgba(255,255,255,.6); text-decoration:none; }
 .foot-icp a:hover { color:#fff; }
+
+/* plogo 手机端折行 */
+@media (max-width:640px) {
+  .plogo { flex-wrap:wrap; justify-content:center; gap:14px; }
+  .plogo img { height:34px; max-width:118px; }
+}
