@@ -103,3 +103,8 @@ header { padding:0; }
 }
 
 .aboutwrap.full p { max-width:860px; }
+
+/* 详情页表格与标题统一 */
+.content table { border-collapse:collapse; margin:14px 0; width:100%; max-width:680px; font-size:15px; }
+.content td, .content th { border:1px solid #c9d8e0; padding:8px 12px; text-align:left; }
+.content h2, .content h3 { font-size:20px; color:#0a4d68; margin:26px 0 10px; }
