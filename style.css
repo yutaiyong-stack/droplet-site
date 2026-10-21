@@ -3,12 +3,12 @@
 body { margin: 0; font-family: "PingFang SC","Microsoft YaHei",sans-serif; color:#333; line-height:1.7; }
 img { max-width:100%; }
 
-nav { background:#0a4d68; padding:14px 24px; position:sticky; top:0; z-index:10; }
+nav { background:#032a6b; padding:14px 24px; position:sticky; top:0; z-index:10; }
 nav strong { color:#fff; font-size:18px; margin-right:24px; }
 nav a { color:#cfe8f5; text-decoration:none; margin-right:16px; font-size:15px; }
 nav a:hover { color:#fff; }
 
-header { background:linear-gradient(135deg,#0a4d68,#088395); color:#fff; text-align:center; padding:90px 24px; }
+header { background:linear-gradient(135deg,#032a6b,#0575e6); color:#fff; text-align:center; padding:90px 24px; }
 header h1 { margin:0 0 14px; font-size:38px; }
 header p { margin:0 0 8px; opacity:.92; font-size:18px; }
 header .tel { font-size:22px; font-weight:bold; margin-top:20px; }
@@ -16,27 +16,27 @@ header .tel a { color:#ffd166; text-decoration:none; }
 
 .stats { display:flex; justify-content:center; gap:60px; background:#f0f7fa; padding:28px 24px; flex-wrap:wrap; }
 .stats div { text-align:center; }
-.stats strong { display:block; font-size:28px; color:#0a4d68; }
+.stats strong { display:block; font-size:28px; color:#032a6b; }
 .stats span { color:#666; font-size:14px; }
 
 section { max-width:1100px; margin:0 auto; padding:56px 24px; }
 section.alt { background:#f7fbfc; max-width:none; }
 section.alt > * { max-width:1100px; margin-left:auto; margin-right:auto; }
-section h2 { color:#0a4d68; border-left:4px solid #088395; padding-left:10px; font-size:28px; }
+section h2 { color:#032a6b; border-left:4px solid #0575e6; padding-left:10px; font-size:28px; }
 section .sub { color:#777; margin-top:-6px; }
 
 .grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(230px,1fr)); gap:22px; margin-top:24px; }
 .card { background:#fff; border:1px solid #e2eef3; border-radius:10px; overflow:hidden; transition:box-shadow .2s; }
-.card:hover { box-shadow:0 4px 16px rgba(10,77,104,.12); }
+.card:hover { box-shadow:0 4px 16px rgba(3,42,107,.12); }
 .card img { width:100%; height:150px; object-fit:cover; }
 .card h3 { margin:12px 14px 6px; font-size:16px; }
-.card h3 a { color:#0a4d68; text-decoration:none; }
+.card h3 a { color:#032a6b; text-decoration:none; }
 .card p { margin:0 14px 14px; font-size:13px; color:#666; }
 
 .artlist { list-style:none; padding:0; }
 .artlist li { border-bottom:1px dashed #d5e5ec; padding:10px 0; }
 .artlist a { color:#333; text-decoration:none; }
-.artlist a:hover { color:#088395; }
+.artlist a:hover { color:#0575e6; }
 
 .aboutwrap { display:flex; gap:28px; align-items:flex-start; margin-top:10px; }
 .aboutwrap img { width:320px; border-radius:10px; flex-shrink:0; }
@@ -49,10 +49,10 @@ footer .copyright { font-size:13px; color:#888; margin-top:14px; }
 
 /* 详情页 */
 main.detail { max-width:860px; margin:0 auto; padding:40px 24px; }
-main.detail h1 { color:#0a4d68; font-size:26px; border-bottom:2px solid #e2eef3; padding-bottom:12px; }
+main.detail h1 { color:#032a6b; font-size:26px; border-bottom:2px solid #e2eef3; padding-bottom:12px; }
 .content img { border-radius:8px; margin:10px 0; }
-.content h2,.content h3 { color:#0a4d68; }
-.back a { color:#088395; text-decoration:none; }
+.content h2,.content h3 { color:#032a6b; }
+.back a { color:#0575e6; text-decoration:none; }
 
 @media (max-width:640px) {
     nav { text-align:center; }
@@ -64,7 +64,7 @@ main.detail h1 { color:#0a4d68; font-size:26px; border-bottom:2px solid #e2eef3;
 }
 
 /* 详情页主图 */
-img.mainimg { display:block; max-width:420px; width:100%; margin:16px auto; border-radius:8px; box-shadow:0 2px 10px rgba(10,77,104,.12); }
+img.mainimg { display:block; max-width:420px; width:100%; margin:16px auto; border-radius:8px; box-shadow:0 2px 10px rgba(3,42,107,.12); }
 
 /* ===== v3：轮播首屏 ===== */
 header { padding:0; }
@@ -72,7 +72,7 @@ header { padding:0; }
 .slide { position:absolute; inset:0; background-size:cover; background-position:center; opacity:0; transition:opacity 1.2s ease; }
 .slide.active { opacity:1; }
 .hero-text { position:absolute; left:0; right:0; bottom:0; padding:40px 24px 30px;
-    background:linear-gradient(transparent, rgba(10,77,104,.85)); color:#fff; text-align:center; }
+    background:linear-gradient(transparent, rgba(3,42,107,.85)); color:#fff; text-align:center; }
 .hero-text h1 { margin:0 0 10px; font-size:34px; text-shadow:0 2px 8px rgba(0,0,0,.35); }
 .hero-text p { margin:0 0 6px; opacity:.95; font-size:17px; }
 .hero-text .tel { font-size:21px; font-weight:bold; margin-top:12px; }
@@ -86,10 +86,10 @@ header { padding:0; }
 .contact-card { background:#fff; border:1px solid #e2eef3; border-radius:12px; padding:26px 20px; text-align:center; }
 .contact-card .qr { width:170px; height:170px; object-fit:contain; border:1px solid #eee; border-radius:8px; }
 .contact-card .cicon { font-size:40px; line-height:1.4; }
-.contact-card h3 { color:#0a4d68; margin:10px 0 6px; }
+.contact-card h3 { color:#032a6b; margin:10px 0 6px; }
 .contact-card p { margin:4px 0; color:#666; font-size:14px; }
-.contact-card a { color:#088395; text-decoration:none; }
-.contact-card a.big { font-size:22px; font-weight:bold; color:#0a4d68; }
+.contact-card a { color:#0575e6; text-decoration:none; }
+.contact-card a.big { font-size:22px; font-weight:bold; color:#032a6b; }
 
 /* ===== v3：手机悬浮拨号 ===== */
 .call-float { display:none; position:fixed; right:18px; bottom:18px; width:56px; height:56px; border-radius:50%;
@@ -107,10 +107,10 @@ header { padding:0; }
 /* 详情页表格与标题统一 */
 .content table { border-collapse:collapse; margin:14px 0; width:100%; max-width:680px; font-size:15px; }
 .content td, .content th { border:1px solid #c9d8e0; padding:8px 12px; text-align:left; }
-.content h2, .content h3 { font-size:20px; color:#0a4d68; margin:26px 0 10px; }
+.content h2, .content h3 { font-size:20px; color:#032a6b; margin:26px 0 10px; }
 
 /* 案例/产品页：简介引导段 */
-.lead { background:#f0f7fa; border-left:4px solid #088395; padding:14px 18px; border-radius:0 8px 8px 0; color:#33505e; margin:14px 0 20px; }
+.lead { background:#f0f7fa; border-left:4px solid #0575e6; padding:14px 18px; border-radius:0 8px 8px 0; color:#33505e; margin:14px 0 20px; }
 /* 第二部分分隔标题 */
 h2.part { border-top:2px solid #e2eef3; padding-top:28px; margin-top:40px; }
 
@@ -125,7 +125,7 @@ h2.part { border-top:2px solid #e2eef3; padding-top:28px; margin-top:40px; }
 @media (max-width:640px) { .plogo { gap:18px; } .plogo img { height:38px; max-width:140px; } }
 
 /* 导航 logo（白底圆角徽章，衬深蓝导航条） */
-nav .logo { height:34px; background:#fff; padding:3px 10px; border-radius:6px; vertical-align:middle; margin-right:14px; }
+nav .logo { height:40px; vertical-align:middle; margin-right:16px; border-radius:4px; }
 
 /* 浮动在线咨询 */
 .chat-btn { position:fixed; right:18px; bottom:18px; width:52px; height:52px; border-radius:50%;
@@ -136,7 +136,7 @@ nav .logo { height:34px; background:#fff; padding:3px 10px; border-radius:6px; v
 .chat-tip span { color:#999; cursor:pointer; margin-left:6px; }
 .chat-panel { display:none; position:fixed; right:18px; bottom:80px; width:230px; background:#fff;
     border-radius:12px; overflow:hidden; box-shadow:0 6px 24px rgba(0,0,0,.2); z-index:100; }
-.chat-head { background:#0a4d68; color:#fff; padding:10px 14px; font-weight:bold; font-size:14px; }
+.chat-head { background:#032a6b; color:#fff; padding:10px 14px; font-weight:bold; font-size:14px; }
 .chat-head span { float:right; cursor:pointer; opacity:.8; }
 .chat-body { padding:8px 0; }
 .chat-item { display:block; padding:9px 16px; color:#333; text-decoration:none; font-size:14px; border-bottom:1px solid #f0f4f6; }
@@ -153,3 +153,9 @@ nav .logo { height:34px; background:#fff; padding:3px 10px; border-radius:6px; v
 .chat-btn .bub::after { content:''; position:absolute; left:4px; bottom:-6px; border:6px solid transparent; border-top-color:#fff; border-right-width:0; }
 .chat-panel { bottom:auto; top:50%; transform:translateY(-50%); right:76px; }
 .chat-tip { bottom:auto; top:50%; transform:translateY(-50%); right:76px; }
+
+/* 品牌区：蓝底白字徽章 + 公司名 */
+.brand { display:inline-flex; align-items:center; }
+.brand-text { color:#fff; font-size:17px; font-weight:bold; letter-spacing:1px; margin-right:18px; white-space:nowrap; }
+nav { background:linear-gradient(90deg,#0575e6 0%,#021b79 100%); }
+@media (max-width:640px){ .brand-text { display:none; } }

@@ -9,7 +9,7 @@
 </head>
 <body>
 <nav>
-    <img class="logo" src="img/logo.png" alt="半点科技（苏州）有限公司">
+    <span class="brand"><img class="logo" src="img/logo.png" alt="半点科技"><span class="brand-text">半点科技（苏州）有限公司</span></span>
     <a href="index.html#home">首页</a>
     <a href="index.html#products">产品中心</a>
     <a href="index.html#cases">成功案例</a>
@@ -42,8 +42,8 @@
     <div class="chat-body">
         <a class="chat-item" href="tel:15995813412">☎ 拨打热线<br><small>15995813412（余经理）</small></a>
         <div class="chat-item chat-qr"><img src="img/wecom-qr.jpg" alt="企业微信"><br><small>企业微信扫码咨询</small></div>
-        <a class="chat-item" href="http://wpa.qq.com/msgrd?v=3&uin=1248261263&site=qq&menu=yes" target="_blank">QQ 交谈<br><small>1248261263</small></a>
-        <a class="chat-item" href="mailto:tyu@dropletech.net">✉ 发送邮件<br><small>tyu@dropletech.net</small></a>
+        <div class="chat-item copy" data-copy="1248261263">QQ 咨询<br><small>1248261263　[点击复制号码]</small></div>
+        <div class="chat-item copy" data-copy="tyu@dropletech.net">邮箱咨询<br><small>tyu@dropletech.net　[点击复制邮箱]</small></div>
     </div>
 </div>
 <script>
@@ -55,6 +55,18 @@
     document.getElementById('chatClose').onclick=function(){panel.style.display='none';};
     document.getElementById('tipClose').onclick=function(e){e.stopPropagation();tip.style.display='none';};
     setTimeout(function(){if(!sessionStorage.getItem('tip')){tip.style.display='block';sessionStorage.setItem('tip','1');}},5000);
+    function copyText(t){
+        if(navigator.clipboard&&navigator.clipboard.writeText){return navigator.clipboard.writeText(t);}
+        var ta=document.createElement('textarea');ta.value=t;document.body.appendChild(ta);ta.select();
+        try{document.execCommand('copy');}catch(e){}document.body.removeChild(ta);
+        return Promise.resolve();
+    }
+    Array.prototype.forEach.call(document.querySelectorAll('.chat-item.copy'),function(el){
+        el.onclick=function(){
+            var t=el.getAttribute('data-copy'),sm=el.querySelector('small'),old=sm.textContent;
+            copyText(t).then(function(){sm.textContent='✓ 已复制到剪贴板';setTimeout(function(){sm.textContent=old;},1600);});
+        };
+    });
 })();
 </script>
 </body>
