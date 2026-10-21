@@ -9,7 +9,7 @@
 </head>
 <body>
 <nav>
-<strong>半点科技</strong>
+<img class="logo" src="img/logo.png" alt="半点科技（苏州）有限公司">
 <a href="index.html#home">首页</a>
 <a href="index.html#products">产品中心</a>
 <a href="index.html#cases">成功案例</a>
@@ -26,13 +26,29 @@
 </div>
 <p class="back"><a href="index.html#cases">← 返回成功案例</a></p>
 </main>
-<footer>
-<h2>联系我们</h2>
-<p>联系人：余经理　|　24小时服务热线：<a href="tel:15995813412">15995813412</a></p>
-<p>邮箱：tyu@dropletech.net　|　官网：www.dropletech.net</p>
-<p>地址：中国（江苏）自由贸易试验区苏州片区苏州工业园区嘉瑞巷8号乐嘉大厦1幢1203室</p>
-<!-- 迁移到 dropletech.net 时，在页脚添加：苏ICP备19007777号-1 -->
-<p class="copyright">半点科技（苏州）有限公司 © 2019-2026</p>
-</footer>
+
+<!-- 浮动在线咨询 -->
+<div class="chat-btn" id="chatBtn" title="在线咨询">💬</div>
+<div class="chat-tip" id="chatTip">需要污水处理方案？点我咨询 <span id="tipClose">×</span></div>
+<div class="chat-panel" id="chatPanel">
+    <div class="chat-head">半点科技 · 在线咨询 <span id="chatClose">×</span></div>
+    <div class="chat-body">
+        <a class="chat-item" href="tel:15995813412">☎ 拨打热线<br><small>15995813412（余经理）</small></a>
+        <div class="chat-item chat-qr"><img src="img/wecom-qr.jpg" alt="企业微信"><br><small>企业微信扫码咨询</small></div>
+        <a class="chat-item" href="http://wpa.qq.com/msgrd?v=3&uin=1248261263&site=qq&menu=yes" target="_blank">QQ 交谈<br><small>1248261263</small></a>
+        <a class="chat-item" href="mailto:tyu@dropletech.net">✉ 发送邮件<br><small>tyu@dropletech.net</small></a>
+    </div>
+</div>
+<script>
+(function(){
+    var btn=document.getElementById('chatBtn'),tip=document.getElementById('chatTip'),
+        panel=document.getElementById('chatPanel');
+    if(!btn)return;
+    btn.onclick=function(){panel.style.display=panel.style.display==='block'?'none':'block';tip.style.display='none';};
+    document.getElementById('chatClose').onclick=function(){panel.style.display='none';};
+    document.getElementById('tipClose').onclick=function(e){e.stopPropagation();tip.style.display='none';};
+    setTimeout(function(){if(!sessionStorage.getItem('tip')){tip.style.display='block';sessionStorage.setItem('tip','1');}},5000);
+})();
+</script>
 </body>
 </html>
