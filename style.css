@@ -113,3 +113,7 @@ header { padding:0; }
 .lead { background:#f0f7fa; border-left:4px solid #088395; padding:14px 18px; border-radius:0 8px 8px 0; color:#33505e; margin:14px 0 20px; }
 /* 第二部分分隔标题 */
 h2.part { border-top:2px solid #e2eef3; padding-top:28px; margin-top:40px; }
+
+/* 无图文字卡片 */
+.card.noimg { padding-top:20px; }
+.card.noimg h3 { font-size:17px; }
