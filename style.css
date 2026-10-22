@@ -152,7 +152,7 @@ nav .logo { height:38px; width:auto; vertical-align:middle; margin-right:14px; }
 .chat-btn .bub { display:inline-block; width:24px; height:19px; background:#fff; border-radius:12px; position:relative; vertical-align:middle; }
 .chat-btn .bub::after { content:''; position:absolute; left:4px; bottom:-6px; border:6px solid transparent; border-top-color:#fff; border-right-width:0; }
 .chat-panel { bottom:auto; top:50%; transform:translateY(-50%); right:76px; }
-.chat-tip { bottom:auto; top:50%; transform:translateY(-50%); right:76px; }
+.chat-tip { bottom:auto; top:calc(50% - 96px); transform:none; right:14px; padding:6px 10px; font-size:12px; white-space:nowrap; }
 
 /* 品牌区：蓝底白字徽章 + 公司名 */
 .brand { display:inline-flex; align-items:center; }
