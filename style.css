@@ -181,3 +181,8 @@ nav { background:linear-gradient(90deg,#0575e6 0%,#021b79 100%); }
   nav a { white-space:nowrap; margin:5px 10px; font-size:14px; }
 }
 nav a { white-space:nowrap; }
+
+/* 悬浮咨询：容器定位右侧留白正中，内部纵列居中 */
+.chat-wrap { position:fixed; right:max(14px, calc((100vw - 1140px)/2 - 70px)); top:50%; transform:translateY(-50%); display:flex; flex-direction:column; align-items:center; gap:10px; z-index:99; }
+.chat-wrap .chat-btn { position:static; top:auto; right:auto; transform:none; }
+.chat-wrap .chat-tip { position:static; top:auto; bottom:auto; right:auto; transform:none; }
